@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "electron": "^33.2.1"
+  },
+  "name": "securepasswordmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec electron electron-main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlliaShyn/Secure-password-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlliaShyn/Secure-password-manager/issues"
+  },
+  "homepage": "https://github.com/IlliaShyn/Secure-password-manager#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

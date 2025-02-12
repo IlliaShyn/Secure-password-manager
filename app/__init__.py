@@ -1,3 +1,4 @@
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
@@ -30,11 +31,12 @@ def create_app():
         db.create_all()  # Create tables if they don't exist
 
     # Import and register blueprints (routes)
-    from app.routes import main, auth, settings
+    from app.routes import main, auth, settings, profile
 
 
     app.register_blueprint(main)
     app.register_blueprint(auth, url_prefix='/auth')
     app.register_blueprint(settings, url_prefix='/settings')
+    app.register_blueprint(profile, url_prefix='/profile')
 
     return app

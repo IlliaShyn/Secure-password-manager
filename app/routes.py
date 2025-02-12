@@ -69,5 +69,5 @@ def set():
 profile = Blueprint('profile', __name__)
 
 @profile.route('/')
-def profile():
+def prof():
     return render_template('profile.html', title="Profile")
